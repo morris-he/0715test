@@ -1,0 +1,404 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font: 14px/1.5 -apple-system,BlinkSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",Helevetica,Arial,"PingFang SC","Hiragino Sans GB","Microsoft YaHei UI","Microsoft YaHei","Source Han Sans CN",sans-serif;
+    -webkit-font-smoothing: subpixel-antialiased;
+    line-height: 1;
+}
+.clear {
+    clear: both;
+}
+.mod-header{
+    position: absolute;
+    display: none;
+    z-index: 99;
+    width: 100%;
+    height: 100px;
+    background-color: #FFFFFF;
+    transition: all 1s ease 0.2s;
+    /*overflow: hidden;*/
+}
+/*滚动条出现*/
+.active{
+    display: block;
+    position: fixed;
+    top: 0;
+}
+.hide{
+    display: none;
+
+}
+.mod-header .left{
+    float: left;
+    width: 30%;
+    height: 100%;
+    background: url("../images/logo-color@2x.png") no-repeat;
+}
+.rightheader{
+    float: left;
+    width: 70%;
+    height: 100%;
+}
+.rightheader ul{
+    list-style: none;
+}
+.rightheader ul li{
+    width: 25%;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+
+   float: left;
+    font-size: 24px;
+}
+.rightheader ul li:last-child{
+    background-color: #0a6999;
+}
+
+
+.intro-wrapper {
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    /*position: absolute;*/
+    /*z-index: 10;*/
+}
+
+.intro-pic {
+    /*width: 700px;*/
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    /*background-color: yellow;*/
+}
+
+.intro-pic div {
+    display: inline-block;
+    margin-left: 22px;
+    width: 88px;
+    height: 1202px;
+    float: right;
+
+}
+
+.intro-pic .column-1 {
+    background-image: url("../images/tubiao1@2x.png");
+    background-size: 88px 1202px;
+    animation: one 5s ease forwards;
+}
+
+@keyframes one {
+    0% {
+        margin-top: -530px;
+    }
+    100%{
+        margin-top: -225px;
+    }
+}
+
+.column-2 {
+    background-image: url("../images/tubiao2@2x.png");
+    background-size: 88px 1202px;
+    animation: two 5s ease forwards;
+}
+@keyframes two {
+    0% {
+        margin-top: -5px;
+    }
+    100%{
+        margin-top: -293px;
+    }
+}
+.column-3 {
+    background-image: url("../images/tubiao3@2x.png");
+    background-size: 88px 1202px;
+    animation: three 5s ease forwards;
+}
+
+@keyframes three {
+    0% {
+        margin-top: -122px;
+    }
+    100%{
+        margin-top: -227px;
+    }
+}
+
+.column-4 {
+    background-image: url("../images/tubiao4@2x.png");
+    background-size: 88px 1202px;
+    animation: four 5s ease forwards;
+}
+
+@keyframes four {
+    0% {
+        margin-top: -225px;
+    }
+    100%{
+        margin-top: -290px;
+    }
+}
+
+.column-5 {
+    background-image: url("../images/tubiao5@2x.png");
+    background-size: 88px 1202px;
+    animation: five 5s ease forwards;
+}
+@keyframes five {
+    0% {
+        margin-top: -225px;
+    }
+    100%{
+        margin-top: -408px;
+    }
+}
+.column-6 {
+    background-image: url("../images/tubiao6@2x.png");
+    background-size: 88px 1202px;
+    animation: six 5s ease forwards;
+}
+@keyframes six {
+    0% {
+        margin-top: -530px;
+    }
+    100%{
+        margin-top: -291px;
+    }
+}
+
+
+
+.intro-detail{
+    position: absolute;
+    left: 57.5%;
+    top: 50%;
+    min-width: 3.6rem;
+    animation: detail 2s ease forwards ;
+}
+
+.intro-detail .title{
+    color: #000;
+    line-height: 65px;
+}
+h4{
+    font-size: 55px;
+    font-weight: 400;
+    margin-bottom: .4rem;
+}
+h4 span{
+    display: block;
+    margin-top: .1rem;
+}
+
+.intro-detail .detail{
+    width: 360px;
+    height: 270px;
+    margin-top: 60px;
+    font-size: 25px;
+    line-height: 35px;
+    color: #000;
+    opacity: .8;
+}
+
+@-webkit-keyframes detail {
+    0%{
+        position: absolute;
+        left: 57.5%;
+        top:70%;
+        opacity: 0;
+    }
+    100%{
+        position: absolute;
+        left: 57.5%;
+        top: 20%;
+        opacity: 1;
+    }
+}
+
+
+.part-online{
+    position: absolute;
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.part-online .intro-wrapper{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-color: #2881ff;
+    animation: p .5s ease forwards;
+}
+@-webkit-keyframes p {
+    0%{
+        margin-left: 100%;
+    }
+    70%{
+        margin-left: 20%;
+    }
+    100%{
+        margin-left: 0
+    }
+}
+.part-online .intro-wrapper .detail-wrapper{
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    animation: t 1.5s ease-out forwards;
+}
+@-webkit-keyframes t {
+    0%{
+        margin-top: 100%;
+    }
+    100%{
+        position: absolute;
+        top: 30%;
+        right: 10%;
+    }
+}
+.detail-wrapper .title h4{
+    color: #fff;
+}
+.detail-wrapper .detail{
+    margin-top: 60px;
+}
+.detail-wrapper .detail p{
+    color: #fff;
+    opacity: .8;
+    font-size: 25px;
+    line-height: 35px;
+}
+
+.right{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-image: url("../images/slide-1.png");
+    background-size: cover;
+    animation: r .5s ease forwards;
+}
+@-webkit-keyframes r {
+    0%{
+        margin-left: 100%;
+    }
+    100%{
+        margin-left: 0
+    }
+}
+
+
+.secrect{
+    position: absolute;
+    top: 1400px;
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    background-color: #5f5f5d;
+    background-image: url("../images/secrect.jpg");
+    background-size: cover;
+}
+
+.secrect .bg{
+    position: relative;
+    width: 100%;
+    height: 700px;
+}
+
+.secrect .bg .leftpic{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+.secrect .bg .righttxt{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.secrect .bg .leftpic .lock{
+    position: relative;
+    width: 260px;
+    height: 190px;
+    background-image: url("../images/lock@2x.png");
+    background-size: cover;
+    margin-left: 10%;
+    animation: zz 2s ease 2s;
+}
+@-webkit-keyframes zz {
+    0%{
+        margin-top: 5px;
+    }
+    20%{
+        margin-top: 0;
+    }
+    40%{
+        margin-top: -5px;
+    }
+    60%{
+        margin-top: 0;
+    }
+    80%{
+        margin-top: 5px;
+    }
+    100%{
+        margin-top: 0;
+    }
+
+}
+
+/*锁上抖*/
+.secrect  .lock span{
+    width:200px;
+    height:150px ;
+    position: absolute;
+    top: -150px;
+    left: 29px;
+    background-image: url("../images/lock-t@2x.png");
+    background-size: cover;
+    animation: ss 2s ease;
+}
+@-webkit-keyframes ss {
+    0%{
+        position: absolute;
+        top: -150px;
+    }
+    50%{
+        position: absolute;
+        top: -180px;
+    }
+    100%{
+        position: absolute;
+        top: -150px;
+    }
+}
+
+
+.secrect .bg .leftpic .lock:after{
+    content: "";
+    background-position: bottom left;
+    width: 10px;
+    height: 50px;
+    position: absolute;
+    top: -50px;
+    left: 29px;
+    background-image: url(../images/lock-t@2x.png);
+}
+/*.secrect .bg .leftpic .shield{*/
+/*    position: relative;*/
+/*    top: -350px;*/
+/*    left: 400px;*/
+/*    width: 300px;*/
+/*    height: 370px;*/
+/*    background-image: url(../images/shield@2x.png);*/
+/*    background-size: cover;*/
+/*}*/
